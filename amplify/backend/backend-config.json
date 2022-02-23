@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "o2dev2": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
