@@ -10,12 +10,9 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import Amplify from 'aws-amplify';
 import awsmobile from '@src/aws-exports';
 
-Amplify.configure({
-  ...awsmobile,
-  aws_user_pools_id: 'ap-northeast-2_y4wZQKBEm',
-  aws_user_pools_web_client_id: '705ok68tqndgu3pbvu7tl09skt',
-  ssr: true,
-});
+Amplify.configure({ ...awsmobile, ssr: true });
+
+// Auth.configure(awsmobile);
 
 function App({ Component, pageProps }: AppProps) {
   const queryClientRef = useRef<QueryClient>();
